@@ -1,7 +1,7 @@
 /**
- Tankduino
- Name: tankduino.ino
- Purpose: Test functionality of the SN754410NE H-bridge IC.
+ Opdracht 1
+ Name: opdracht1.ino
+ Purpose: Test basic functionality of the SN754410NE H-bridge IC.
 
  @author Olivier Verhaegen
  @version 1.0.0
