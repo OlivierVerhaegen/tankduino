@@ -41,7 +41,7 @@ void loop() {
   x++;
 
   // Read data
-  Wire.requestFrom(4, 3);
+  Wire.requestFrom(MOTOR_I2C, 3);
   while(Wire.available()) {
     byte a = Wire.read();
     Serial.println(a);
@@ -51,7 +51,7 @@ void loop() {
   //   Serial.println(a);
   // }
 
-  Wire.requestFrom(8, 3);
+  Wire.requestFrom(SENSOR_I2C, 3);
   while(Wire.available()) {
     byte a = Wire.read();
     Serial.println(a);
