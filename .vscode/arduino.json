@@ -3,5 +3,5 @@
     "board": "arduino:avr:nano",
     "configuration": "cpu=atmega328old",
     "port": "COM6",
-    "sketch": "tankduino.ino"
+    "sketch": "individuele_opdrachten\\opdracht1\\opdracht1.ino"
 }
