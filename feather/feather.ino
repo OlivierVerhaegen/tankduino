@@ -22,6 +22,7 @@ void setup() {
 
   // Initialize Serial.
   Serial.begin(9600);
+  Serial.println("Feather Initialized");
 }
 
 void loop() {
@@ -41,6 +42,7 @@ void loop() {
   x++;
 
   // Read data
+  Serial.println("Requesting data from motors");
   Wire.requestFrom(MOTOR_I2C, 3);
   while(Wire.available()) {
     byte a = Wire.read();
@@ -51,6 +53,7 @@ void loop() {
   //   Serial.println(a);
   // }
 
+  Serial.println("Requesting data from sensors");
   Wire.requestFrom(SENSOR_I2C, 3);
   while(Wire.available()) {
     byte a = Wire.read();

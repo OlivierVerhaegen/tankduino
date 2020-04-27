@@ -10,8 +10,8 @@
 #include <Wire.h>
 
 void setup() {
-  // Initialize I2C on address 8.
-  Wire.begin(8);
+  // Initialize I2C on address 4.
+  Wire.begin(4);
   Wire.onReceive(receiveData);
   Wire.onRequest(requestData);
   // Don't use internal pull ups
@@ -20,6 +20,7 @@ void setup() {
 
   // Initialize Serial.
   Serial.begin(9600);
+  Serial.println("Motors Initialized");
 }
 
 void loop() {
@@ -38,7 +39,7 @@ void receiveData(int numOfBytes) {
 }
 
 void requestData() {
-  Serial.println("Master requested data.")
+  Serial.println("Master requested data.");
   uint8_t buffer[3];
   buffer[0] = 1;
   buffer[1] = 2;

@@ -10,8 +10,8 @@
 #include <Wire.h>
 
 void setup() {
-  // Initialize I2C on address 4.
-  Wire.begin(4);
+  // Initialize I2C on address 8.
+  Wire.begin(8);
   Wire.onReceive(receiveData);
   Wire.onRequest(requestData);
   // Don't use internal pull ups
