@@ -14,6 +14,9 @@ void setup() {
   Wire.begin(8);
   Wire.onReceive(receiveData);
   Wire.onRequest(requestData);
+  // Don't use internal pull ups
+  digitalWrite(SDA, LOW);
+  digitalWrite(SCL, LOW);
 
   // Initialize Serial.
   Serial.begin(9600);
