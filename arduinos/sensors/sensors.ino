@@ -38,7 +38,7 @@ void receiveData(int numOfBytes) {
 }
 
 void requestData() {
-  Serial.println("Master requested data.")
+  Serial.println("Master requested data.");
   uint8_t buffer[3];
   buffer[0] = 1;
   buffer[1] = 2;
