@@ -16,8 +16,8 @@
 
 #define SENSOR_I2C 8
 
-const char* ssid = "telenet-534A48C"; // Enter your WiFi name
-const char* password =  "1458414584"; // Enter WiFi password
+const char* ssid = "***"; // Enter your WiFi name
+const char* password =  "***"; // Enter WiFi password
 const char* mqtt_server = "mqtt.luytsm.be";
 const int mqtt_port = 1883;
 #define mqtt_port 1883
